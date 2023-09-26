@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Pendu</title>
+</head>
+<body>
+    <h1 class="h1">LE PENDU</h1>
+    
+
+    
+    
+    <section class="containerPendu">
+
+        <div class="firstInput">
+            <input class="firstInputIn" type="submit" name="" id="nouvellePartie" value="Nouvelle Partie">
+            <input class="firstInputIn" type="submit" name="" onclick="openModal()" id="disabledInput" value="proposer un mot">
+            
+            <label class="nombreVie">nombre de vie</label>
+            <div class="vie"> 
+                <img width="50px" src="img/vie.png" id="coeur1" alt="">
+                <img width="50px" src="img/vie.png" id="coeur2" alt="">
+                <img width="50px" src="img/vie.png" id="coeur3" alt="">
+                <img width="50px" src="img/vie.png" id="coeur4" alt="">
+                <img width="50px" src="img/vie.png" id="coeur5" alt="">
+            </div>
+        </div>
+        
+        <div class="arbre">
+
+            <img class="feu1" src="https://www.gifsanimes.com/data/media/492/feu-d-artifice-image-animee-0080.gif" alt="feu-d-artifice-image-animee-0080" />
+            <img class="feu2" src="https://www.gifsanimes.com/data/media/492/feu-d-artifice-image-animee-0098.gif" alt="feu-d-artifice-image-animee-0098" />
+            <img class="feu3" src="https://www.gifsanimes.com/data/media/492/feu-d-artifice-image-animee-0098.gif" alt="feu-d-artifice-image-animee-0098" />
+
+            <img class="homer" src="img/homer.gif" alt="">
+
+            <img id="imageVictoire" src="img/victoire.png" alt="">
+            <img id="imageDefaite" src="img/defaite.png" alt="">
+
+            <img src="img/arbre.png">
+        </div>
+
+        <div class="historique">
+            <h4 class="titreLettreUse">Lettre déjà utilisée</h4>
+            <p class="lettreUse"></p>
+        </div>
+        
+    </section>
+
+    <span class="spanMot" id="spanMot"></span>
+
+ 
+    <section>
+        <div class="containerBgOpacity" id="arrierePlan"></div>
+        <div class="modalContentPerso" id="premierPlan">
+            <div class="headerModalPerso">
+                <div class="close">✕</div>
+            </div>
+            <div class="bodyModalPerso">
+                <div class="elementBoby">
+                    <h2 class="" id="">😈 Victoire ou defaite 😈</h2>
+                    <input class="inputModal" type="text" name="" id="proposerMot" value="" tabindex="-1" placeholder="Proposer votre mot ici">
+                </div>
+            </div>
+            <div class="footer">
+                <button type="button" class="btn">proposer</button>
+            </div>
+        </div>
+   </section>
+      
+
+<script src="script/script.js"></script> 
+
+</body>
+</html>

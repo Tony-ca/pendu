@@ -1,0 +1,216 @@
+@import url('https://fonts.cdnfonts.com/css/diablo');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(5, 20, 34);
+    color: #fff;
+    font-family: 'Diablo', sans-serif;
+}
+.h1{
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    margin-block: 20px;
+}
+input{
+    text-align: center;
+    font-family: 'Diablo', sans-serif;
+}
+input::placeholder{
+    font-style: italic;
+    text-align: center;
+}
+.firstInput{
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+    width: 20%;
+}
+.firstInputIn{
+    font-size: 30px;
+    border-radius: 20px;
+    margin-block: 15px;
+}
+.containerPendu{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.spanMot{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 10px;
+    margin-top: 50px;
+    font-size: 60px;
+}
+.nombreVie{
+    margin-top: 400px;
+}
+.historique{
+    height: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    border: solid 4px #fff;
+}
+.titreLettreUse{
+    text-align: center;
+    font-size: 23px;
+}
+.lettreUse{
+    margin-top: 30px;
+    text-align: center;
+    font-size: 40px;
+    width: 320px;
+    letter-spacing: 15px;
+}
+.arbre{
+    position: relative;
+}
+#imageVictoire,
+#imageDefaite{
+    display: none;
+    top: 40px;
+    width: 600px;
+    position: absolute;
+
+}
+.feu1{
+    display: none;
+    left: 200px;
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+}
+.feu2{
+    display: none;
+    left: 10px;
+    position: absolute;
+    width: 200px;
+    z-index: 1;
+}
+.feu3{
+    display: none;
+    left: 300px;
+    position: absolute;
+    width: 250px;
+    z-index: 1;
+}
+.homer{
+    display: none;
+    left: 350px;
+    top: 490px;
+    width: 200px;
+    position: absolute;
+}
+.nombreVie,
+.vie{
+    display: flex;
+    justify-content: center;
+}
+
+/* modal sans bootstrap */
+
+.containerBgOpacity{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    opacity: 0.9;
+    background: #222;
+    top:0;
+    left: 0;
+    overflow: hidden;
+
+    animation-name: fadeIn_Container;
+    animation-duration: 1s;
+}
+.modalContentPerso{
+    display:none;
+    width: 500px;   
+    margin-left: calc(50vw - 250px);
+    margin-top: calc(50vh - 150px);
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    background: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000;
+
+    animation-name: fadeIn_Modal;
+    animation-duration: 0.8s;
+ 
+}
+.close{
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+    color: white;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+.headerModalPerso{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 2px solid #ccc;
+}
+.elementBoby{
+    margin-top: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+
+}
+.btn{
+    font-family: 'Diablo', sans-serif;
+    cursor: pointer;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.inputModal{
+    border-radius: 10px;
+    margin-block: 30px;
+    font-size: 20px;
+}
+
+
+@keyframes fadeIn_Modal{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+    
+@keyframes fadeIn_Container{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.9;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
